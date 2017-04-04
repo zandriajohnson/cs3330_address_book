@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="237.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zj5fffinal.NewContactController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleSavetoFile" text="Save As.." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleUploadPhoto" text="Upload Photo" />
+              <MenuItem mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="320.0" prefWidth="237.0">
+         <children>
+            <Button alignment="CENTER_RIGHT" layoutX="91.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+            <Text layoutX="75.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Contact">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="firstName" layoutX="91.0" layoutY="49.0" prefHeight="25.0" prefWidth="129.0" promptText="First Name*" />
+            <TextField fx:id="lastName" layoutX="91.0" layoutY="92.0" prefHeight="25.0" prefWidth="129.0" promptText="Last Name*" />
+            <TextField fx:id="phoneNumber" layoutX="52.0" layoutY="175.0" prefHeight="25.0" prefWidth="142.0" promptText="Phone Number*" />
+            <ImageView fx:id="contactPhoto" fitHeight="74.0" fitWidth="64.0" layoutX="14.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="28.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Photo" wrappingWidth="48.0" />
+            <TextField layoutX="52.0" layoutY="135.0" prefHeight="25.0" prefWidth="142.0" promptText="Company (Optional)" />
+            <TextField layoutX="52.0" layoutY="214.0" prefHeight="25.0" prefWidth="142.0" promptText="Email (Optional)" />
+         </children></AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="237.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zj5fffinal.AddressBookController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="319.0" prefWidth="237.0">
+         <children>
+            <Button layoutX="58.0" layoutY="42.0" mnemonicParsing="false" onAction="#goToNewContact" text="Create New Contact" />
+            <Text layoutX="84.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Contacts">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="noContacts" layoutX="25.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="50.0">
+               <font>
+                  <Font size="13.0" />
+               </font></Text>
+            <ListView fx:id="list" layoutX="19.0" layoutY="112.0" onEditStart="#updateAddressBook" prefHeight="193.0" prefWidth="200.0" />
+            <Text layoutX="157.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
